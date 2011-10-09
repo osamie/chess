@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/157/trunk/Chess/src/pack
+END
+ChessButton.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/142/trunk/Chess/src/pack/ChessButton.java
+END
+SetupKnightsTour.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/143/trunk/Chess/src/pack/SetupKnightsTour.java
+END
+SetupEightQueens.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/143/trunk/Chess/src/pack/SetupEightQueens.java
+END
+GameView.java
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/154/trunk/Chess/src/pack/GameView.java
+END
+Pawn.java
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/151/trunk/Chess/src/pack/Pawn.java
+END
+Move.java
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/151/trunk/Chess/src/pack/Move.java
+END
+Rook.java
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/141/trunk/Chess/src/pack/Rook.java
+END
+GraphicalChessGame.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/156/trunk/Chess/src/pack/GraphicalChessGame.java
+END
+ChessPiece.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/157/trunk/Chess/src/pack/ChessPiece.java
+END
+ChessBoard.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/157/trunk/Chess/src/pack/ChessBoard.java
+END
+Queen.java
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/141/trunk/Chess/src/pack/Queen.java
+END
+Bishop.java
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/142/trunk/Chess/src/pack/Bishop.java
+END
+Knight.java
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/141/trunk/Chess/src/pack/Knight.java
+END
+SetupChess.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/149/trunk/Chess/src/pack/SetupChess.java
+END
+MoveHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/157/trunk/Chess/src/pack/MoveHistory.java
+END
+King.java
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/150/trunk/Chess/src/pack/King.java
+END
+GameSetup.java
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/143/trunk/Chess/src/pack/GameSetup.java
+END
+GraphicalKnightsTour.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/157/trunk/Chess/src/pack/GraphicalKnightsTour.java
+END
+GraphicalEightQueens.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/156/trunk/Chess/src/pack/GraphicalEightQueens.java
+END
+Player.java
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/124/trunk/Chess/src/pack/Player.java
+END
