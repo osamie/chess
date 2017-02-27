@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * The Class KnightsTour.
  * 
- * @author Osazuwa
+ * @author
  */
 public class SetupKnightsTour extends GameSetup {
   

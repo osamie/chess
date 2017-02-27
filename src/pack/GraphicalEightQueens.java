@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
 import com.thoughtworks.xstream.XStream;
 
 /**
- * @author
+ * @author Tobi
  * 
  */
 public class GraphicalEightQueens implements ActionListener {

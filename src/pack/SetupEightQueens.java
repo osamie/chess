@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * The Class EightQueens.
  * 
- * @author Osazuwa
+ * @author Tobi
  */
 public class SetupEightQueens extends GameSetup {
   

@@ -6,8 +6,8 @@ import javax.swing.*;
 /**
  * Models a  chess square and contains its coordinates
  * 
- * @author Zuwa 
- * @version 
+ * @author (your name) 
+ * @version (a version number or a date)
  */
 public class ChessButton extends JButton
 {

@@ -32,7 +32,7 @@ import javax.swing.border.Border;
 import com.thoughtworks.xstream.XStream;
 
 /**
- * @author
+ * @author Tobi
  * 
  */
 
