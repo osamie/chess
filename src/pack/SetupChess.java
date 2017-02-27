@@ -4,7 +4,7 @@ import java.util.Stack;
 
 
 /**
- * 
+ *
  * The Class ChessGame.
  */
 
@@ -22,14 +22,14 @@ public class SetupChess extends GameSetup {
    * Instantiates a new chess game.
    */
 	Player p1 = new Player("Tobi",c,1);
-	Player p2 = new Player("Nat",c,2);
+	Player p2 = new Player("Zuwa",c,2);
 	Point a = new Point(3,7);
 	Point b = new Point(5,5);
 	ChessPiece c1;
-	
+
   public SetupChess() {
-		
-		
+
+
 		//Constructing player one's pieces
 		Pawn p1 = new Pawn(ChessBoard.SIZE - 1, ChessBoard.SIZE - 2, c, 1);
 		Pawn p2 = new Pawn(ChessBoard.SIZE - 2, ChessBoard.SIZE - 2, c, 1);
@@ -47,8 +47,8 @@ public class SetupChess extends GameSetup {
 		Bishop b2 = new Bishop(ChessBoard.SIZE - 6, ChessBoard.SIZE - 1, c, 1);
 		Knight t1 = new Knight(ChessBoard.SIZE - 2, ChessBoard.SIZE - 1, c, 1);
 		Knight t2 = new Knight(ChessBoard.SIZE - 7, ChessBoard.SIZE - 1, c, 1);
-		
-		
+
+
 		//Constructing player two's pieces
 		Pawn p9 = new Pawn(ChessBoard.SIZE - 7, ChessBoard.SIZE - 7, c, 2);
 		Pawn p10 = new Pawn(ChessBoard.SIZE - 8, ChessBoard.SIZE - 7, c, 2);
@@ -66,9 +66,9 @@ public class SetupChess extends GameSetup {
 		Bishop b4 = new Bishop(ChessBoard.SIZE - 6, ChessBoard.SIZE - 8, c, 2);
 		Knight t3 = new Knight(ChessBoard.SIZE - 2, ChessBoard.SIZE - 8, c, 2);
 		Knight t4 = new Knight(ChessBoard.SIZE - 7, ChessBoard.SIZE - 8, c, 2);
-				
+
   }
- 
+
 /**
    * Play.
    */
@@ -77,18 +77,18 @@ public class SetupChess extends GameSetup {
 	  while(true)
 	  {
 		  c.legalMove = false;
-		  
+
 		  while ((!c.legalMove) && (!c.isCheckMate()) && !(c.isStalemate(ChessBoard.WHITE))){
 			  p1.play();
 			  c.print();
 		  }
 		  c.legalMove = false;
-		  
+
 		  while (!c.legalMove && (!c.isCheckMate())&& !(c.isStalemate(ChessBoard.BLACK))){
 			  p2.play();
 			  if (!c.legalMove){System.out.println("Illegal Move");}
 			  c.print();
-		  } 
+		  }
 		  if (c.isCheckMate())
 		  {
 			  System.out.println("CHECKMATE!");

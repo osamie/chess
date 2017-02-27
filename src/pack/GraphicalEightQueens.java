@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package pack;
 
@@ -16,10 +16,6 @@ import javax.swing.JOptionPane;
 
 import com.thoughtworks.xstream.XStream;
 
-/**
- * @author Tobi
- * 
- */
 public class GraphicalEightQueens implements ActionListener {
 	JFrame chessFrame;
 	ChessButton buttons[][];
@@ -46,48 +42,48 @@ public class GraphicalEightQueens implements ActionListener {
 		count = 0;
 		chessFrame = new JFrame("Eight Queens");
 		chesspanel = new Panel();
-		Panel chesspanel3 = new Panel();  
+		Panel chesspanel3 = new Panel();
 
-		
+
 		chessFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		chessFrame.setSize(550, 500);
 		chessFrame.setLayout(new BorderLayout());
-		
+
 		chesspanel.setLayout(new GridLayout(9, 8));
 		chesspanel3.setLayout(new GridLayout(9, 1));
 
 		chessFrame.add(chesspanel, BorderLayout.CENTER);
 		chessFrame.add(chesspanel3, BorderLayout.WEST);
-		
+
 		JMenuBar menuBar = new JMenuBar();
 		chessFrame.setJMenuBar(menuBar);
 
 		JMenu Game = new JMenu("Game");
 		menuBar.add(Game);
-		
+
 		JMenu Edit = new JMenu("Edit");
 		menuBar.add(Edit);
 
 		NewGame = new JMenuItem("New Game");
 		NewGame.addActionListener(this);
 		Game.add(NewGame);
-		
+
 		Undo = new JMenuItem("Undo");
 		Undo.addActionListener(this);
 		Edit.add(Undo);
 		//Undo.setEnabled(false);
-		
+
 		Redo = new JMenuItem("Redo");
 		Redo.addActionListener(this);
 		Edit.add(Redo);
-		
-		
+
+
 		Save = new JMenuItem("Save Game");
 		Save.addActionListener(this);
 		Game.add(Save);
-		
+
 		//jPanel2.
-		
+
 		Load = new JMenuItem("Load Game");
 		Load.addActionListener(this);
 		Game.add(Load);
@@ -112,7 +108,7 @@ public class GraphicalEightQueens implements ActionListener {
 				buttons[i][j].setRolloverEnabled(false);
 			}
 		}
-		
+
 		String[] Numer = {"", "8", "7", "6", "5", "4", "3", "2", "1" };
 		labels = new JButton[9];
 		for (int i = 0; i < 9; i++) {
@@ -126,7 +122,7 @@ public class GraphicalEightQueens implements ActionListener {
 			chesspanel3.repaint();
 		}
 
-		
+
 		for (int a = 0; a < ChessBoard.SIZE; a++) {
 			for (int b = 0; b < ChessBoard.SIZE; b++) {
 				if ((a - b) % 2 == 0) {
@@ -136,8 +132,8 @@ public class GraphicalEightQueens implements ActionListener {
 				}
 
 			}
-			
-			
+
+
 		}
 		xst = new XStream();
 		chessFrame.setVisible(true);
@@ -145,7 +141,7 @@ public class GraphicalEightQueens implements ActionListener {
 
 	/**
 	 * An example of a method - replace this comment with your own
-	 * 
+	 *
 	 * @param y
 	 *            a sample parameter for a method
 	 * @return the sum of x and y
@@ -183,7 +179,7 @@ public class GraphicalEightQueens implements ActionListener {
 					}
 			}
 		}
-		
+
 
 	}
 
@@ -221,14 +217,14 @@ public class GraphicalEightQueens implements ActionListener {
 					w.close();
 				} catch (IOException e) {
 					e.printStackTrace();
-				}catch (NullPointerException e){}    
+				}catch (NullPointerException e){}
 			}
-				
+
 			if (source.getText() == "Load Game") {
 				FileDialog f = new FileDialog(chessFrame, "Load Game",
 						FileDialog.LOAD);
 				f.setVisible(true);
-				
+
 				ChessBoard newC;
 				try {
 					SetupEightQueens seq = new SetupEightQueens();
@@ -245,22 +241,22 @@ public class GraphicalEightQueens implements ActionListener {
 			if (source.getText() == "Undo") {
 				if(!c.m.getUndoStack3().isEmpty())
 				{
-					
+
 					Point p = c.m.getUndoStack3().pop();
 					c.getBoard().removePiece((int)p.getX(), (int)p.getY());
-					
+
 					c.m.getRedoStack3().push(p);
 					count--;
 					Redo.setEnabled(true);
-					
+
 				}
 				else
 				{
-					JOptionPane.showMessageDialog(null, "Nothing to Undo!!");	
+					JOptionPane.showMessageDialog(null, "Nothing to Undo!!");
 				}
 				this.repaint();
-				
-				
+
+
 			}
 			if (source.getText() == "Redo") {
 				if (!c.m.getRedoStack3().isEmpty())
@@ -270,13 +266,13 @@ public class GraphicalEightQueens implements ActionListener {
 					c.m.getUndoStack3().push(p);
 					count++;
 					repaint();
-					
+
 				}
 				else
 				{
-					JOptionPane.showMessageDialog(null, "Nothing to Redo!!");	
+					JOptionPane.showMessageDialog(null, "Nothing to Redo!!");
 				}
-				
+
 			}
 			if (source.getText() == "Exit") {
 
